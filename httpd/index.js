@@ -21,6 +21,7 @@ let serve = (response, fname, datatype) => {
     if (err) {
       console.log('檔案讀取錯誤：' + fname);
     }
+
     else {
       response.writeHead(200, {
         'Content-Type': datatype
